@@ -1,5 +1,5 @@
 export default function Footer(props) {
-    const { showModal, handleToggleModel, data } = props;
+    const { handleToggleModal, data } = props;
     
     return (
         <footer>
@@ -8,7 +8,7 @@ export default function Footer(props) {
                 <h1>APOD PROJECT</h1>
                 <h2>{data?.title}</h2>
             </div>
-            <button onClick={handleToggleModel}>
+            <button onClick={handleToggleModal}>
                 <i className="fa-solid fa-circle-info"></i>
             </button>
         </footer>
